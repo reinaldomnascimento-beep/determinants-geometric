@@ -61,7 +61,7 @@ its educational purpose.
 ---
 
 ## Project Structure
-/ ├── index.html ├── docs/ │   ├── Determinants_Geometric_Memorization_EN.pdf │   └── Metodo_Determinantes_PT.pdf └── matlab/ └── determinant_recursive_method.m
+/ ├── index.html ├── docs/ │   ├── Determinants_Geometric_Memorization_EN.pdf │   └── Determinantes_Menorização_24062020.pdf └── matlab/ └── detp.m
 
 ---
 
