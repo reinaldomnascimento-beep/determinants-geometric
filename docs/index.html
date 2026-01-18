@@ -229,6 +229,46 @@
   margin-top: 4px;
   letter-spacing: 0.5px;
 }
+/* Usage guide button */
+.usage-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: inherit;
+
+  border: 1px solid #bbb;
+  border-radius: 4px;
+
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.usage-btn:hover {
+  background-color: #eaeaea;
+}
+
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: #c62828; /* vermelho elegante */
+  color: white;
+
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
   </style>
 </head>
 
@@ -285,11 +325,18 @@
     </select>
 
     <br><br>
-
+<div class="controls">
     <button onclick="gerarMatriz()">Gerar Matriz</button>
     <button id="runBtn" onclick="executar()" disabled>Executar</button>
+<!-- Usage Guide Button -->
+<a href="pdf/how_to_use_the_page.pdf"
+   target="_blank"
+   class="usage-btn"
+   title="How to use the page · Como usar a página">
+  <span class="help-icon">?</span>
+  How to use · Como usar
+</a>
   </div>
-
   <!-- PAINÉIS -->
   <div id="panels">
 
@@ -334,27 +381,22 @@
 </div>
 <section class="documentation">
   <h2>Documentation / Resources</h2>
-
   <ul>
     <li>
    <a href="pdf/Determinants_by_Geometric_Memorization_EN.pdf" target="_blank">
         Article (PDF – English)
       </a>
     </li>
-
     <li>
 <a href="pdf/Determinantes_Menorização_24062020.pdf" target="_blank">
   Artigo (PDF – Português)
 </a>
     </li>
-
     <li>
-
 <a href="matlab/detp.m"download>
   MATLAB Script (.m)
 </a>
     </li>
-
     <li>
 <a href="README.md">
   README
